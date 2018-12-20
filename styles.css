@@ -1,0 +1,124 @@
+
+
+body {
+    background-color: #F0ECEE;
+    width: 100%;
+    height: 100%;   
+}
+
+html {
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+}
+#appContainer {
+    position: relative;
+    width: 80%;
+    height: 100vh;
+    transform: translate(10%);
+}
+* {
+    font-family: 'Fira Sans', sans-serif;
+}
+.redText {
+    color: #FF4850;
+}
+
+.homepageMainButton {
+    
+    background-color: #FF4850;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    color: #F0ECEE;
+    font-weight: 400;
+    padding: 10px;
+    font-size: 17px;
+    
+
+}
+.homepageMainButton:hover {
+    color: #FF4850;
+    background-color: #CCC;
+
+}
+.headerContainer {
+    position: relative; 
+    z-index: 2;
+
+}
+.mainContent {
+    position: relative;
+    z-index: 2;
+    margin-top: 120px;
+}
+
+.dogImageContainer {
+    display: none;
+}
+
+.menuLabels p {
+    color: #88898B;
+    font-weight: 400;
+    margin: 3px;
+    
+    
+}
+.menuLabels p:hover {
+    color: #FF4850;
+}
+h3 {   
+    color: #88898B;
+    font-weight: 400;
+    font-size: 15px;
+
+}
+@media screen and (min-width: 641px){
+    /*Any styles that apply to desktop version go under this media query*/
+    .dogImageContainer {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+        display: block;
+
+
+    }
+    .dogImageContainer img {
+        width: 900px;
+        height: 100%;
+        
+
+    }
+    .headerContainer {
+        display: flex;
+        justify-content: space-between;
+       
+
+    }
+    .menuLabels{
+
+        display: flex;
+        align-items: center;
+    }
+    .menuLabels p {
+
+        margin-right: 13px;
+
+
+    }
+
+
+    
+    .innerContent {
+        position: absolute;
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 640px){
+    .homepageMainButton {
+        width: 100%;
+    }
+}
